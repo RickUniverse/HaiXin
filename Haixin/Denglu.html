@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>海信电器，登录</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+			header{
+				width: 100%;
+				height: 100%;
+			}
+			.top1{
+				width: 100%;
+				height: 90px;
+				/*border: 1px solid black;*/
+			}
+			.top2{
+				width: 1188px;
+				height: 100px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+			}
+			/*.top2>div{
+				width: 20px;
+				height: 20px;
+				border: 1px solid black;
+				display: inline-block;
+			}*/
+			.topimg{
+				width: 152px;
+				height: 42.55px;
+				/*border: 1px solid black;*/
+				display: inline-block;
+				margin-top:25px ;
+			}
+			.topimg>a>img{
+				width: 152px;
+				height: 42.55px;
+			}
+			.toptext{
+				width:300px;
+				height: 42.55px;
+				/*border: 1px solid black;*/
+				display: inline-block;
+				margin-top:25px ;
+				overflow: hidden;
+				font-size: 20px;
+				line-height: 42.55px;
+			}
+			/**/
+			section{
+				width: 100%;
+				height: 100%;
+			}
+			#zhuti{
+				width: 1449px;
+				height: 600px;
+				margin: 0 auto;
+				/*border: 1px solid black;*/
+				position: relative;
+			}
+			#zhuimg>img{
+				width: 100%;
+				height: 600px;
+			}
+			/**/
+			#zhubiao{
+				width: 384px;
+				height: 522px;
+				/*border: 1px solid black;*/
+				background-color: white;
+				margin-top:0 ;
+				position: absolute;
+				top: 40px;
+				/*right: 80px;*/
+				margin-left: 820px;
+				border-radius:3px ;
+			}
+			#denglubox{
+				width: 384px;
+				height: 65px;
+				border-bottom: 2px solid #777777;
+				margin-bottom: 2px;
+			}
+			#denglubox>div{
+				width: 185px;
+				height: 64px;
+				/*border: 1px solid black;*/
+				font-size: 20px;
+				line-height: 64px;
+				text-align: center;
+				display: inline-block;
+			}
+			#denglu>p{
+				width: 100px;
+				height: 64px;
+				margin: 0 auto;
+				border-bottom: 2px solid #0277BD;
+				color: #0277BD;
+				/*box-sizing: border-box;*/
+			}
+			#denglu>p{
+				width: 100px;
+				height: 64px;
+				margin: 0 auto;
+				/*border-bottom: 3px solid red;*/
+				box-sizing: border-box;
+			}
+			#denglubox1{
+				width: 384px;
+				height: 65px;
+				/*border-bottom: 0px solid blue;*/
+				
+			}
+			#denglubox1>input{
+				border-bottom:1px solid #CCCCCC;
+				border-top: none;
+				border-left: none;
+				border-right:none;
+				display: block;
+				font-size: 18px;
+				margin: 0 auto;
+				box-sizing: border-box;
+			}
+			#denglubox2>input{
+				border-bottom:1px solid #CCCCCC;
+				border-top: none;
+				border-left: none;
+				border-right:none;
+				display: block;
+				font-size: 18px;
+				margin: 0 auto;
+			}
+			#denglubox2{
+				width: 384px;
+				height: 65px;
+				/*border-bottom: 2px solid blue;*/
+			}
+			#denglubox2>div{
+				float: left;
+			}
+			#dengludanxuan{
+				width: 16px;
+				height: 16px;
+				/*border: 1px solid red;*/
+				/*display: inline-block;*/
+				/*float: left;*/
+				margin-top:19px ;
+				font-size: 13px;
+				margin-left:20px ;
+			}
+			#dengludanxuan1-1{
+				width: 90px;
+				height: 20px;
+				/*border: 1px solid red;*/
+				/*display: inline-block;*/
+				/*float: left;*/
+				margin-top:19px ;
+				font-size: 13px;
+			}
+			#dengludanxuan1{
+				width: 80px;
+				height: 20px;
+				/*border: 1px solid red;*/
+				/*display: inline-block;*/
+				/*float: left;*/
+				margin-top:19px ;
+				font-size: 14px;
+				
+				margin-left:80px ;
+			}
+			#dengludanxuan1>a{
+				color: #000000;
+			}
+			#dengludanxuan2>a{
+				color: #0277BD;
+			}
+			#dengludanxuan2{
+				width: 90px;
+				height: 20px;
+				/*border: 1px solid red;*/
+				/*display: inline-block;*/
+				margin-top:19px ;
+				font-size: 14px;
+				margin-left:5px ;
+			}
+			#dengludanxuan3{
+				width: 384px;
+				height: 65px;
+				/*border: 1px solid red;*/
+				
+			}	
+			#dengludanxuan3>input{
+				display: block;
+				margin: 0 auto;
+				margin-top:15px ;
+			}
+			/*jiao*/
+			.bot1{
+				width: 100%;
+				height: 100px;
+				/*border: 1px solid black;*/
+				padding-top: 30px;
+			}
+			.bot2>div{
+				font-size: 16px;
+				color: #777777;
+				line-height: 30px;
+				text-align: center;
+			}
+			#dengludisanfang{
+				width: 288px;
+				height: 94px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+			#dengludisanfang>div{
+				font-size: 15px;
+				color: #777777;
+				line-height: 40px;
+				text-align: center;
+			}
+			/**/
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="top1">
+		  	 <div class="top2">
+		  	 	<div class="topimg">
+		  	 		<a href="HaiXin.html"><img src="dengimg/top1.png"/></a>
+		  	 	</div>
+		  	 	<div class="toptext">
+		  	 		<p>权威官网 汇聚精品</p>
+		  	 	</div>
+		  	 </div>
+		  </div>
+		</header> 
+		<section>
+			<div id="zhuti">
+				<div id="zhuimg">
+					<img src="dengimg/zhu2.jpg"/>
+				</div>
+				
+				<div id="zhubiao">
+					<div id="denglubox">
+						<div id="denglu">
+							<p>账户登录</p>
+						</div>
+						<div id="denglu1">
+							<p>快捷登录</p>
+						</div>
+					</div>
+					<form action="" method="post">
+						<div id="denglubox1">
+						     <input type="text" name="shoujihao" id="shoujihao" placeholder="手机号码" required="手机号不能为空" style="width: 288px; height: 65px;" />
+					    </div>
+					    <!--<div>-->
+						<div id="denglubox2">
+						     <input type="password" name="mima" id="mima" placeholder="密码" required="密码不能为空" style="width: 288px; height: 65px;" />
+					    </div>
+					    <!--</div>-->
+					    <div id="denglubox2">
+					    	<div id="dengludanxuan">
+					    		<input type="radio" name="单选" value="" style="width: 16px; height: 16px;" />
+					    		
+					    	</div>
+					    	<div id="dengludanxuan1-1">
+					    		<!--<span id="miandeng">-->
+					    			30天免登录
+					    		<!--</span>-->
+					    	</div>
+					    	
+					    	<div id="dengludanxuan1">
+					    		<a href="#">忘记密码？</a>
+					    	</div>
+					    	<div id="dengludanxuan2">
+					    		<a href="#">免费注册</a>
+					    	</div>
+					    </div>
+					    <div id="dengludanxuan3">
+					    	<input type="submit" value="立即登陆" style="width: 300px; height: 50px; color: white; background-color: #0277BD; border: none;"/>
+					    </div>
+						<div id="dengludisanfang">
+							<div>
+								可选择第三方登陆支付
+							</div>
+							<div>
+								微信       支付宝
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="bot1">
+				<div class="bot2">                                   
+				    <div>Copyright 2015 Hisense Group All Rights Reserved.</div>
+				    <div>海信集团有限公司版权所有 京ICP备0508775</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

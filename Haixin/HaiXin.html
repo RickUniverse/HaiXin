@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>海信电器,项目</title>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+				text-decoration: none;
+			}
+			/*补充*/
+			/*video::-webkit-media-controls{
+				display: none; !important;
+			}*/
+			/*补充*/
+			header {
+				width: 100%;
+				height: 100%;
+				/*border: 0px solid black;*/
+				overflow: hidden;
+			}
+			
+			.top1 {
+				box-sizing: border-box;
+				/*border: 1px solid red;*/
+				overflow: hidden;
+			}
+			
+			.top1,
+			img {
+				width: 100%;
+				vertical-align: top;
+				/*垂直对齐一幅图像*/
+			}
+			
+			.top2 {
+				width: 100%;
+				height: 33px;
+				background-color: #444;
+				/*border: 1px solid black;*/
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+			
+			.text1 {
+				width: 100px;
+				height: 33px;
+				font-size: 12px;
+				/*display: inline-block;*/
+				line-height: 33px;
+				text-align: center;
+				/*margin: 0 0 0 60px;*/
+				/*border: 1px solid yellow;*/
+				float: left;
+				margin-left: 100px;
+			}
+			
+			.text2 {
+				width: 490px;
+				height: 33px;
+				/*border: 1px solid black;*/
+				float: right;
+			}
+			
+			.text2>li {
+				width: 60px;
+				height: 33px;
+				font-size: 12px;
+				/*display: inline-block;*/
+				line-height: 33px;
+				text-align: center;
+				/*border: 1px solid yellow;*/
+				float: left;
+				/*margin: 0 0 0 8px;*/
+				/*overflow: hidden;*/
+			}
+			/*.textbox{
+		    	margin: 0 0 0 800px;
+		    }*/
+			
+			.textcolor1 {
+				color: #ccc;
+			}
+			/*.textcolor2{
+		    	color:#ccc;
+		    }*/
+			
+			.text2>li>a[class^=text] {
+				color: #ccc;
+			}
+			
+			.textcolor1:hover {
+				color: white;
+			}
+			
+			.text2>li>a[class^=textcolor2]:hover {
+				color: #0277bd;
+			}
+			
+			.text2>li>a[class^=textcolor3]:hover {
+				color: #0277bd;
+			}
+			
+			.text2>li>a[class^=texts]:hover {
+				color: white;
+			}
+			/*fen*/
+			
+			#logebox {
+				width: 100%;
+				height: 75px;
+				background-color: white;
+				/*border: 1px solid fuchsia;*/
+			}
+			/*#logebox1{*/
+			/*width: 3px;*/
+			/*height: 75px;*/
+			/*border: 1px solid yellow;*/
+			/*box-sizing: border-box;*/
+			/*position: relative;*/
+			/*}*/
+			
+			#logebox2 {
+				width: 156px;
+				height: 28px;
+				/*border: 2px solid black;*/
+				/*position: absolute;
+		     	left: 80px;
+		     	top: 20px;*/
+				float: left;
+				margin: 20px 0 0 80px;
+			}
+			/*#daohangbox{
+		     	width: 650px;
+		     	height: 30px;
+		     	border: 1px solid black;
+		     }*/
+			
+			#daohangtext {
+				width: 650px;
+				height: 30px;
+				/*border: 1px solid black;*/
+				margin: 0 auto;
+				float: left;
+				margin-top: 20px;
+				margin-left: 80px;
+			}
+			#daohangtext>li>a{
+				color: black;
+			}
+			#daohangtext>li{
+				font-size: 15px;
+				width: 70px;
+				height: 30px;
+				/*border: 1px solid black;*/
+				float: left;
+				line-height: 30px;
+				text-align: center;
+			}
+			
+			#sou {
+				width: 250px;
+				/*border: 1px solid blue;*/
+				float: right;
+				margin-top: 20px;
+				margin-right: 40px;
+			}
+			
+			#sousuotext {
+				font: "微软雅黑";
+				font-size: 20px;
+			}
+			#sousuotext2{
+				border: 1px solid #CCCCCC;
+				border-radius: 6px;
+				width: 170px;
+				height: 25px;
+			}
+			#sousuotext:hover {
+				text-shadow: #CCCCCC 1px 1px 2px;
+			}
+			
+			#sousuotext2:hover {
+				box-shadow: #CCCCCC 1px 1px 1px;
+				
+			}
+			
+			#daohangtext>li>a:hover {
+				color: #0277bd;
+			}
+			/*#logebox2{
+		     	width:
+		     }*/
+			/*上面是头部*/
+			/*这是主体*/
+			.chakangengduo:hover{
+				color: #0277BD;
+			}
+			@keyframes gundong{
+				0%{
+					transform: translate(0px);
+				}
+				40%{
+					transform: translate(0px);
+				}
+				50%{
+					transform: translate(-1349px);
+				}
+				90%{
+					transform: translate(-1349px);
+				}
+				100%{
+					transform: translate(0px);
+				}
+				/*0%{
+					transform: translate(-300px);
+				}
+				49%{
+					transform: translate(0px);
+				}*/
+			}
+			
+			/*.zhuimgbox2:hover{
+				transform:translate(-300px) ;
+				z-index: 0;
+			}*/
+			.gundong {
+				width: 1349px;
+				height: 500px;
+				border: 1px solid;
+				/*bug*/
+				/*position: relative;*/
+				margin: 0 auto;
+				
+			}
+			/*.zhuimgbox{
+				width: 300px;
+				height: 110px;
+				border: 1px solid blueviolet;
+				
+			}*/
+			.zhuimgbox1{
+				width: 1349px;
+				/*width: 300px;*/
+				height: 500px;
+				/*height: 110px;*/
+				/*border: 1px solid blue;*/
+				/*float:right;*/
+				/*display: inline-block;*/
+				position: absolute;
+				margin-left:1349px ;
+				/*margin-left:12px ;*/
+				animation:gundong 8s infinite ;
+				/*align-content: center;*/
+			}
+			.zhuimgbox2{
+				width:1349px;
+				/*width: 300px;*/
+				height: 500px;
+				/*height: 110px;*/
+				/*border: 1px solid blue;*/
+				/*float:right;*/
+				/*display: inlinsp23e-block;*/
+				position: absolute;
+				animation:gundong 8s infinite;
+				/*align-content: center;*/
+			}
+			.xiaobiao{
+				width: 45px;
+				height: 15px;
+				/*border: 1px solid black;*/
+				z-index: 999;
+				margin-top:465px ;
+				margin-left:80px ;
+			}
+			.xiaobiao1{
+				width: 15px;
+				height: 15px;
+				/*border: 1px solid black;*/
+				float:right;
+				box-sizing: border-box;
+				border-radius: 10px;
+				z-index: 999;
+				background-color: #CCCCCC;
+				border: 3px solid white;
+			}
+			.xiaobiao2{
+				width: 15px;
+				height: 15px;
+				/*border: 1px solid black;*/
+				float:right;
+				box-sizing: border-box;
+				border-radius: 10px;
+				margin-right: 10px;
+				z-index: 999;
+				background-color: #CCCCCC;
+			}
+			.xiaobiao1:hover{
+				/*width: 18px;
+				height: 18px;
+				border: 1px ;*/
+				/*border: 3px solidtextf1 darkcyan;*/
+				/*background-color: white;*/
+			}
+			section{
+				width: 100%;
+				height: 5070px;
+				/*5070*/
+				/*border: 1px solid black;*/
+				background-color: rgba(255,255,255,0.01);
+				/*background-color: rgba(0,0,0,0);*/
+				/*opacity: 0.6;*/
+				/*overflow: hidden;*/
+			}
+			.zhubiao{
+				width: 1188px;
+				height: 85px;
+				/*border: 1px solid black;*/
+				margin: 0 auto;
+			}
+			.zhubiao>span{
+				width: 90px;
+				height: 30px;
+				/*border: 1px solid black;*/
+				/*line-height: 70px;*/
+				font-size: 21px;
+				display: block;
+				font-style: strong;
+				margin-top: 38px;
+			}
+			.shangimg{
+				width: 1188px;
+				height: 418px;
+				/*border: 1px solid black;*/
+				margin: 0 auto;
+				
+			}
+			.shangimg1{
+				width: 588px ;
+				height: 388px;
+				/*display: inline-block;*/
+				float: left;
+				/*border: 1px solid black;*/
+				overflow: hidden;
+				/*有大用处！！！！*/
+			}
+			.shangimg2{
+				width:288px ;
+				height: 388px;
+				/*display: inline-block;*/
+				float: left;
+				/*border: 1px solid black;*/
+				overflow: hidden;
+				margin-left:10px ;
+			}
+			
+			.shangimg5{
+				width:288px ;
+				height: 388px;
+				/*display: inline-block;*/
+				float: left;
+				/*border: 1px solid black;*/
+				overflow: hidden;
+				margin-left:10px ;
+			}
+
+			.shangimg4{
+				width: 288px;
+				height: 188px;
+				/*border: 1px solid black;*/
+				margin-top:12px ;
+				overflow: hidden;
+			}
+			/*.textscolor5{
+				width: 288px;
+				height: 188px;
+				border: 1px solid black;
+				box-sizing: border-box;
+				margin-left:10px;
+			}*/
+			.shangimg1>a>img:hover{
+				transform: translateY(-6px);
+				transition: 0.7s;
+			}
+			.shangimg2>a>img:hover{
+				transform: translateY(-6px);
+				transition: 0.7s;
+			}
+			.shangimg3>a>img:hover{
+				transform: translateY(-6px);
+				transition: 0.7s;
+			}
+			.shangimg4>a>img:hover{
+				transform: translateY(-6px);
+				transition: 0.7s;
+			}
+			/*下面是电视*/
+			.dianshi{
+				width: 1188px;
+				height: 85px;
+				/*border: 1px solid black;*/
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.bingxiang{
+				width: 1188px;
+				height: 85px;
+				/*border: 1px solid black;*/
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.dianshi1>li{
+				width: 90px;
+				height: 30px;
+				line-height: 30px;
+				/*text-align: center;*/
+				/*border: 1px solid black;*/
+				font-size: 21px;
+				float: left;
+				margin-top: 38px;
+			}
+			.bingxinag1>li{
+				width: 90px;
+				height: 30px;
+				line-height: 30px;
+				/*text-align: center;*/
+				/*border: 1px solid black;*/
+				font-size: 21px;
+				float: left;
+				margin-top: 38px;
+			}
+			.dianshi2>li>a{
+				width: 90px;
+				height: 30px;
+				/*border: 1px solid black;*/
+				line-height: 30px;
+				text-align: center;
+				color: #444444;
+				float: right;
+				font-size: 13px;
+				margin-top:38px ;
+			}
+			.bingxiang2>li>a{
+				width: 90px;
+				height: 30px;
+				/*border: 1px solid black;*/
+				line-height: 30px;
+				text-align: center;
+				color: #444444;
+				float: right;
+				font-size: 13px;
+				margin-top:38px ;
+			}
+			.sp21{
+				width: 1188px;
+				height:624px ;
+				margin: 0 auto;
+				/*border: 1px solid black;*/
+				box-sizing: border-box;
+			}
+			.sp22{
+				width:228px ;
+				height: 612px;
+				/*border: 1px solid black;*/
+				/*display: inline-block;*/
+				float: left;
+				/*margin-top:10px ;*/
+				box-sizing: border-box;
+				overflow: hidden;
+			}
+			/*.sap28{
+				width:228px ;
+				height: 300px;
+				border: 1px solid black;
+				margin-top: 100px;
+			}*/
+			.sp214{
+				margin: 5px 0px 0px 5px ;
+			}
+			/*.sp22>img{
+				overflow: hidden;
+			}*/
+			.sp23{
+				width:950px ;
+				height: 640px;
+				/*border: 1px solid red;*/
+				/*display: inline-block;*/
+				float: left;
+				margin-top:0 ;
+				box-sizing: border-box;
+				margin-left:3px ;
+			}
+			.sp23>div{
+				width:228px ;
+				height: 300px;
+				/*border: 1px solid black;*/
+				/*display: inline-block;*/
+				float: left;
+				box-sizing: border-box;
+				margin: 0px 0px 9px 9px;
+				overflow: hidden;
+			}
+			.sp212>li{
+				width:210px;
+				height: 210px;
+				box-sizing: border-box;
+				/*border: 1px solid black;*/
+				overflow: hidden;
+			}.sp23>div>ul[class^=sp21]{
+				overflow: hidden;
+				box-sizing: border-box;
+			}
+			.sp23>div>ul>li{
+				width: 210px;
+				height: 210px;
+				/*border: 1px solid black;*/
+			}
+			/******颜色********/
+			.sp23>div[class^=sap2]{
+				background-color: rgba(240,240,244,0.9);
+			}
+			/*.sap24:hover{
+				box-shadow: #CCCCCC 2px 2px 10px;
+			}*/
+			.sp23>div[class^=sap2]:hover{
+				box-shadow: #CCCCCC 6px 14px 19px;
+			}
+			.sp22>img:hover{
+				transform: translateY(-6px);
+				transition: 0.7s;
+			}
+			.textq1{
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 20px;
+				height: 20px;
+				color: #1e1e1e;
+				text-align:center ;
+			}
+			.textw1{
+				font-size: 12px;
+                color: #777;
+                height: 24px;
+                text-align: center;
+                line-height: 24px;
+		 	}
+		 	.texte1{
+		 		font-size: 20px;
+		 		color: red;
+		 		height: 30px;
+		 		text-align: center;
+		 		line-height: 30px;
+		 	}
+			/*.sp24{
+				
+				display: inline-block;
+			}
+			.sp25{
+				width:228px ;
+				height: 300px;
+				border: 1px solid black;
+				display: inline-block;
+			}
+			.sp26{
+				width:228px ;
+				height: 300px;
+				border: 1px solid black;
+				display: inline-block;
+			}*/
+		    /*洗衣机*/
+		   .xiyiji{
+		   	width: 1188px;
+		   	height: 320px;
+		   	/*border: 1px solid black;*/
+		   	margin: 0 auto;
+		   }
+		   .xiyiji>div{
+		   	width: 228px;
+		   	height: 300px;
+		   	/*border: 1px solid black;*/
+		   	/*display: inline-block;*/
+		   	float: left;
+		   	margin: 4px 0px 4px 9px;
+		   }
+		   .xiyiji1{
+		   	overflow: hidden;
+		   }
+		   .xiyiji3{
+		   	overflow: hidden;
+		   	background-color: rgba(240,240,244,0.9);
+		   }
+		   .xiyiji1>img:hover{
+		   	transform: translateY(-6px);
+			transition: 0.7s;
+		   }
+		   .xiyiji3:hover{
+		   	box-shadow: #CCCCCC 6px 14px 19px;
+		   }
+		   .xiyiji2{
+		   	width:210px;
+			height: 210px;
+			box-sizing: border-box;
+			/*border: 1px solid black;*/
+			overflow: hidden;
+		   }
+		   /*下面是视频*/
+		  .spbox{
+		  	width: 1188px;
+		  	height: 308px;
+		  	/*border: 1px solid black;*/
+		  	margin: 0 auto;
+		  	
+		  }
+		  .spbox>div[class^=spbox]{
+		  	width: 388px;
+		  	height: 308px;
+		  	/*border: 1px solid black;*/
+		  	/*display: inline-block;*/
+		  	float: left;
+		  	overflow: hidden;
+		  	background-color: white;
+		  }
+		  .spbox>div[class^=spbox1]{
+		  	width: 388px;
+		  	height: 300px;
+		  	/*border: 1px solid black;*/
+		  	margin: 0 0 0 2px;
+		  }
+		  .vi1{
+		  	width:388px ;
+		  	height: 218px;
+		  	/*border: 1px solid black;*/
+		  }
+		  .textv1{
+		  	font-size: 18px;
+		  	line-height: 18px;
+		  	font-weight: 800;
+		  	text-align: center;
+		  	color: #000000;
+		  	margin-top:12px ;
+		  	margin-bottom:10px ;
+		  }
+		  .textv2{
+		  	font-size: 15px;
+		  	line-height: 15px;
+		  	text-align: center;
+		  	color: #777777;
+		  }
+		  /*服务*/
+		 .fuwubox{
+		 	width:1188px ;
+		  	height: 140px;
+		  	/*border: 1px solid black;*/
+		  	/*position: relative;*/
+		 }
+		 .fuwubox>div{
+		 	width:288px ;
+		  	height: 120px;
+		  	/*border: 1px solid black;*/
+		  	/*display: inline-block;*/
+		  	float: left;
+		  	/*overflow: hidden;*/
+		  	/*margin: 0 0 0 10px;*/
+		 }
+		 .fuwubox>div>img{
+		 	width:288px ;
+		  	height: 120px;
+		  	background-position: top;
+		 }
+		 .textf1{
+		 	width: 228px;
+		 	height: 120px;
+		 	/*border: 1px solid blue;*/
+		 }
+		 /*.textf1>img[src^=img3/fwa]{*/
+		 	/*width: 228px;
+		 	height: 120px;*/
+		 	/*background-size: cover;*/
+		 	/*border: 1px solid blue;*/
+		 	/*position: absolute;*/
+		 /*}*/
+		 .fuwubox>div:hover{
+		 	box-shadow: #CCCCCC 1px 10px 15px;
+		 }
+		 /*.textf1>img[src^=img3/fwb]{
+		 	position: absolute;
+		 	width: 228px;
+		 	height: 120px;
+		 	background-size: cover;
+		 	border: 1px solid blue;
+		 }*/
+		/*脚部*/
+		footer{
+			width: 100%;
+			height: 100%;
+			/*border: 1px solid black;*/
+		}
+		 .botbox{
+		 	width: 100%;
+		 	height: 410px;
+		 	/*border: 1px solid red;*/
+		 }
+		 .bot1{
+		 	width: 1188px;
+		 	height: 106px;
+		 	/*border: 1px solid red;*/
+		 	margin: 0 auto;
+		 	margin-top:5px ;
+		 }
+		 .bot1>div{
+		 	/*display: inline-block;*/
+		 	float: left;
+		 }
+		 .bot1>div>img{
+		 	width: 290px;
+		 	height: 106px;
+		 	/*border: 1px solid red;*/
+		 	/*display: inline-block;*/
+		 	float: left;
+		 	box-sizing: border-box;
+		 	margin: 0 0 0 3px;
+		 }
+		 #textbox{
+		 	width: 100%;
+		 	height: 254px;
+		 	/*border: 1px solid black;*/
+		 }
+		 #textbox1{
+		 	width: 1188px;
+		 	height: 254px;
+		 	/*border: 1px solid black;*/
+		 	margin: 0 auto;
+		 }
+		 #text2{
+		 	font-size: 17px;
+		 	color: #000000;
+		 	
+		 }
+		 #text1{
+		 	width: 159px;
+		 	height: 150px;
+		 	/*border: 1px solid black;*/
+		 	/*margin-top:10px ;*/
+		 	/*display: inline-block;*/
+		 	float: left;
+		 	/*overflow: hidden;*/
+		 	margin-bottom:62px ;
+		 	box-sizing: border-box;
+		 }
+		 #text1>p>a{
+		 	color:#1E1E1E;
+		 	font-size:14px;
+		 	margin: 3px 0px 0px 0px;
+		 }
+		 #text1>p{
+		 	margin: 4px 0px 0px 0px;
+		 }
+		 #text1>p>a:hover{
+		 	color: #0277BD;
+		 }
+		 #textimg{
+		 	width: 170px;
+		 	height: 210px;
+		 	/*border: 1px solid black;*/
+		 	margin-top:40px ;
+		 	/*display: inline-block;*/
+		 	float: left;
+		 	/*overflow: hidden;*/
+		 }
+		 #textimg1{
+		 	font-size: 25px;
+		 	color: #0277BD;
+		 }
+		 #textimg2{
+		 	font-size: 13px;
+		 	color: #777777;
+		 }
+		  #textimg4{
+		  	font-size: 13px;
+		 	color: #777777;
+		 }
+		 #textimg3>img{
+		 	width: 100px;
+		 	height: 100px;
+		 }
+		 #textimg>p>a{
+		 	display: block;
+		 	text-align: center;
+		 	margin-top:10px ;
+		 }
+		 /*最底部*/
+		#bottom{
+			width: 100%;
+			height: 60px;
+			/*border: 1px solid #FF00FF;*/
+			margin-top:43px ;
+			background-color: #1E1E1E;
+		}
+		#bottom1{
+			width: 1188px;
+			height: 60px;
+			/*border: 1px solid #000000;*/
+			margin: 0 auto;
+		}
+		#bottom4{
+			width: 1188px;
+			height: 43px;
+			/*border: 1px solid red;*/
+			overflow: hidden;
+		}
+		#bottom4>div{
+			/*display: inline-block;*/
+			float: left;
+		}
+		#bottom2{
+			width: 239px;
+			height: 21px;
+			/*border: 1px solid #000000;*/
+			margin-top:20px ;
+			/*display: inline-block;*/
+			float: left;
+		}
+		#bottom2>div{
+			width: 56px;
+			height: 21px;
+			/*display: inline-block;*/
+			float: left;
+			overflow: hidden;
+		}
+		#bottom3{
+			width: 80px;
+			height: 18px;
+			font-size: 15px;
+			color: #CCCCCC;
+			/*display: inline-block;*/
+			margin-top:20px ;
+			float: left;
+			/*border: 1px solid #000000;*/
+		}
+		#bottom5{
+			width: 730px;
+			height: 20px;
+			font-size: 15px;
+			color: #CCCCCC;
+			/*display: inline-block;*/
+			float: left;
+			/*border: 1px solid #000000;*/
+			overflow: hidden;
+			margin-left: 100px;
+			margin-top:20px ;
+		}
+		/*到此为止*/
+		/*。。7。。。*/
+		#cebian{
+			width: 60px;
+			height: 420px;
+			/*border: 1px solid black;*/
+			float: right;
+			position: fixed;
+			right: 0;
+			top: 100px;
+			z-index: 999;
+		}
+		#cebian>div{
+			width: 60px;
+			height: 60px;
+			/*border: 1px solid;*/
+			box-sizing: border-box;
+			border-bottom-color: #444444;
+			background-color: rgba(240,240,244,0.9);
+			border-radius: 2px;
+			margin-bottom:1px ;
+		}
+		#cebian>div:hover{
+			box-shadow: #444444 1px 1px 11px;
+		}
+		#cebian>div>p>a{
+			font-size: 17px;
+			line-height: 60px;
+			display: block;
+			text-align:center;
+			/*margin: 0 auto;*/
+			color: #000000;
+		}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a name="cebian7"></a>
+			<div class="top1">
+				<a href="HaiXin.html"><img src="img/img1.jpg" alt="a" title="双十一特惠" /></a>
+				<!--<div class="top">
+
+				</div>-->
+				<div class="top2">
+
+					<ul>
+						<li class="text1">
+							<a class="textcolor1" href="HaiXin.html">海信集团官网</a>
+						</li>
+					</ul>
+
+					<ul class="text2">
+						<li>
+							<a class="textcolor2" href="Denglu.html">登陆</a>
+						</li>
+						<li>
+							<a class="textcolor3" href="#">注册</a>
+						</li>
+						<li>
+							<a class="textscolor4" href="#">消息中心</a>
+						</li>
+						<li>
+							<a class="textscolor5" href="Bangzhuzhongxin.html">帮助中心</a>
+						</li>
+						<li>
+							<a class="textscolor6" href="#">下载APP</a>
+						</li>
+						<li>
+							<a class="textscolor7" href="#">网址导航</a>
+						</li>
+						<li>
+							<a class="textscolor8" href="#">购物车(0)</a>
+						</li>
+					</ul>
+				</div>
+				<!--fen-->
+				<div id="logebox">
+					<!--<div id="logebox1">-->
+					<div id="logebox2">
+						<a href="HaiXin.html"><img src="img/img2.png" alt="a" title="海信集团" /></a>
+						<!--</div>-->
+					</div>
+					<!--<div id="daohangbox">
+			    		
+			    	</div>-->
+					<ul id="daohangtext">
+						<li><a href="#">11.11预售</a></li>
+						<li><a href="#">激光</a></li>
+						<li><a href="Dianshi.html">电视</a></li>
+						<li><a href="#">冰箱</a></li>
+						<li><a href="#">空调</a></li>
+						<li><a href="#">冷柜</a></li>
+						<li><a href="#">手机</a></li>
+						<li><a href="#">空净</a></li>
+						<li><a href="#">洗衣机</a></li>
+					</ul>
+					<div id="sou">
+						<form action="#" method="post">
+							<p>
+								<span id="sousuotext">
+			    					搜索
+			    				</span>:
+								<input id="sousuotext2" type="search" name="sousuo" />
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<section>
+
+			<div class="gundong">
+				<ul class="zhuimgbox">
+					<li class="zhuimgbox1">
+						<a  href="#" ><img src="img/zhutiimg1.jpg" alt="a" title="进入此商品页面" <!--width="5396px" height="500px"--></a>
+					</li>
+					<li class="zhuimgbox2">
+						<a href="#"><img src="img/zhutiimg2.jpg" alt="a" title="进入此商品页面" <!--width="5396px" height="500px"/--></a>
+					</li>
+				</ul>
+				<ul class="xiaobiao">
+					<li class="xiaobiao1"></li>
+					<li class="xiaobiao2"></li>
+				</ul>
+			</div>
+			<div class="zhubiao">
+				<span>
+					频道专区
+				</span>
+			</div>
+			<!--1188  388-->
+			<div class="shangimg">
+				<div class="shangimg1">
+					<a href="#"><img src="img/zhutiimg3.png" alt="" title="商品" /></a>					
+				</div>
+				<div class="shangimg2">
+					<a href="#"><img src="img/zhutiimg4.png" alt="" title="商品" /></a>					
+				</div>
+				<div class="shangimg5">
+					<div class="shangimg3">
+					<a href="#"><img src="img/zhutiimg5.png" alt="" title="商品" /></a>
+				</div>
+				<div class="shangimg4">
+					<a href="#"><img src="img/zhutiimg6.png" alt="" title="商品" /></a>
+				</div>
+				</div>
+			</div>
+			<!--电视-->
+			<div class="dianshi">
+				<ul class="dianshi1">
+					<li><a name="cebian1">电视</a></li>
+				</ul>
+				<ul class="dianshi2">
+					<li><a class="chakangengduo" href="#">查看更多</a></li>
+				</ul>
+			</div>
+			<div class="sp21">
+				<div class="sp22">
+					<!---->
+					<img src="img/sp22.png" alt="" title="海信官方商城，值得信赖">
+				</div>
+				<div class="sp23">
+					<div class="sap24">
+						<!---->
+						<ul >
+							<li class="sp212"><img src="img/sp212.png"alt="" title="电视4K"</li>
+							<li >
+								<p class="textq1">65英寸/4K超清/3+64超大....</p>
+								<p class="textw1">65英寸超高配无边全面屏系列电视活....</p>
+								<p class="texte1">&#165;6999.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap25">
+						<ul >
+							<li class="sp213"><img src="img/sp213.png"alt="" title="电视4K"</li>
+							<li>
+								<p class="textq1">55英寸/4K电视/金属超薄....</p>
+								<p class="textw1">55英寸子夜游侠系列电视活....</p>
+								<p class="texte1">&#165;3299.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap26">
+						<ul >
+							<li class="sp214"><img src="img/sp214.png"alt="" title="电视4K"</li>
+							<li>
+								<p class="textq1">55英寸/4K电视/金属超薄....</p>
+								<p class="textw1">50英寸子夜游侠系列电视活....</p>
+								<p class="texte1">&#165;3799.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap27">
+						<ul >
+							<li class="sp215"><img src="img/sp215.png"alt="" title="电视4K"</li>
+							<li>
+								<p class="textq1">45英寸/细腰外观/智能....</p>
+								<p class="textw1">45英寸超轻观影系列电视活....</p>
+								<p class="texte1">&#165;2599.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap28">
+						<ul >
+							<li class="sp216"><img src="img/sp216.png"alt="" title="电视4K"</li>
+							<li>
+								<p class="textq1">65英寸/4K超清/3+64超大....</p>
+								<p class="textw1">65英寸超高配无边全面屏系列电视活....</p>
+								<p class="texte1">&#165;2299.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap29">
+						<ul>
+							<li  class="sp217"><img src="img/sp217.png"alt="" title="电视4K"</li>
+							<li>
+								<p class="textq1">43英寸/高清智能/WiFi网络....</p>
+								<p class="textw1">43英寸活动价2rmb....</p>
+								<p class="texte1">&#165;999.00</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sap210">
+						<ul >
+							<li class="sp218"><img src="img/sp218.png"alt="" title="电视4K"</li>
+							<li>
+								<p class="textq1">32英寸/高智能/WiFi网络....</p>
+								<p class="textw1">32英寸高清网络电视活动价1rmb....</p>
+								<p class="texte1">&#165;1599.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap211">
+						<ul >
+							<li class="sp219"><img src="img/sp219.png"alt="" title="电视4K"</li>
+							<li>
+								<p class="textq1">65英寸/浅薄外观/人工智能....</p>
+								<p class="textw1">65英寸超清观影系列仅1rmb....</p>
+								<p class="texte1">&#165;4199.00</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+					<!--冰箱-->	
+						<!---->
+				<div class="bingxiang">
+				<ul class="bingxinag1">
+					<li ><a name="cebian2">冰箱</a></li>
+				</ul>
+				<ul class="bingxiang2">
+					<li><a class="chakangengduo" href="#">查看更多</a></li>
+				</ul>
+			</div>
+			<div class="sp21">
+				<div class="sp22">
+					<!---->
+					<img src="img2/bx1.png" alt="" title="海信官方商城，值得信赖">
+				</div>
+				<div class="sp23">
+					<div class="sap24">
+						<!---->
+						<ul >
+							<li class="sp212"><img src="img2/bx7.png"alt="" title="冰箱"</li>
+							<li >
+								<p class="textq1">法式多门/风冷无霜/322升....</p>
+								<p class="textw1">法式多门下单就省....</p>
+								<p class="texte1">&#165;1998.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap25">
+						<ul >
+							<li class="sp213"><img src="img2/bx2.png"alt="" title="冰箱"</li>
+							<li>
+								<p class="textq1">多开门/525升/矢量变频....</p>
+								<p class="textw1">多开晚二十四点开售，欲购从速....</p>
+								<p class="texte1">&#165;3499.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap26">
+						<ul >
+							<li class="sp214"><img src="img2/bx3.png"alt="" title="冰箱"</li>
+							<li>
+								<p class="textq1">单开/525升/矢量变频....</p>
+								<p class="textw1">单开送货入门，海信冰箱....</p>
+								<p class="texte1">&#165;2799.00</p>
+							</li>
+						</ul>
+					</div>
+			        <div class="sap27">
+						<ul >
+							<li class="sp215"><img src="img2/bx4.png"alt="" title="冰箱"</li>
+							<li>
+								<p class="textq1">单开/风冷无霜/322升....</p>
+								<p class="textw1">单开晚二十四点开售，欲购从速....</p>
+								<p class="texte1">&#165;7599.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap28">
+						<ul >
+							<li class="sp216"><img src="img2/bx5.png"alt="" title="冰箱"</li>
+							<li>
+								<p class="textq1">多开门/525升/矢量变频....</p>
+								<p class="textw1">多开门送货入门，海信冰箱....</p>
+								<p class="texte1">&#165;2429.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap29">
+						<ul>
+							<li  class="sp217"><img src="img2/bx6.png"alt="" title="冰箱"</li>
+							<li>
+								<p class="textq1">双开/风冷无霜/322升....</p>
+								<p class="textw1">双开晚二十四点开售，欲购从速....</p>
+								<p class="texte1">&#165;4499.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap210">
+						<ul >
+							<li class="sp218"><img src="img2/bx7.png"alt="" title="冰箱"</li>
+							<li>
+								<p class="textq1">对开门/525升/矢量变频....</p>
+								<p class="textw1">对开门送货入门，海信冰箱....</p>
+								<p class="texte1">&#165;1999.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap211">
+						<ul >
+							<li class="sp219"><img src="img2/bx8.png"alt="" title="冰箱"</li>
+							<li>
+								<p class="textq1">双开/风冷无霜/322升....</p>
+								<p class="textw1">双开寸送货入门，海信冰箱....</p>
+								<p class="texte1">&#165;9199.00</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--空调-->
+				<div class="dianshi">
+				<ul class="dianshi1">
+					<li><a name="cebian3">空调</a></li>
+				</ul>
+				<ul class="dianshi2">
+					<li><a class="chakangengduo" href="#">查看更多</a></li>
+				</ul>
+			</div>
+			<div class="sp21">
+				<div class="sp22">
+					<!---->
+					<img src="img2/kt1.png" alt="" title="海信官方商城，值得信赖">
+				</div>
+				<div class="sp23">
+					<div class="sap24">
+						<!---->
+						<ul >
+							<li class="sp212"><img src="img2/kt2.png"alt="" title="空调"</li>
+							<li >
+								<p class="textq1">小1.5匹男神小智静音风道设/....</p>
+								<p class="textw1">内外双清洁+静音设计/晒图评价咨询....</p>
+								<p class="texte1">&#165;1.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap25">
+						<ul >
+							<li class="sp213"><img src="img2/kt3.png"alt="" title="空调"</li>
+							<li>
+								<p class="textq1">静音风道设计/空调挂机....</p>
+								<p class="textw1">自动清洁+大循环风量+静音....</p>
+								<p class="texte1">&#165;2999.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap26">
+						<ul >
+							<li class="sp214"><img src="img2/kt4.png"alt="" title="空调"</li>
+							<li>
+								<p class="textq1">单开/525升/矢量变频....</p>
+								<p class="textw1">内外双清洁+静音设计/晒图评价咨询....</p>
+								<p class="texte1">&#165;4999.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap27">
+						<ul >
+							<li class="sp215"><img src="img2/kt5.png"alt="" title="空调"</li>
+							<li>
+								<p class="textq1">1.5匹/三级能效/定....</p>
+								<p class="textw1">自动清洁+大循环风量+静音....</p>
+								<p class="texte1">&#165;5699.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap28">
+						<ul >
+							<li class="sp216"><img src="img2/kt6.png"alt="" title="空调"</li>
+							<li>
+								<p class="textq1">静音风道设计/空调挂机...</p>
+								<p class="textw1">内外双清洁+静音设计/晒图评价咨询....</p>
+								<p class="texte1">&#165;3998.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap29">
+						<ul>
+							<li  class="sp217"><img src="img2/kt7.png"alt="" title="空调"</li>
+							<li>
+								<p class="textq1">1.5匹/三级能效/定....</p>
+								<p class="textw1">自动清洁+大循环风量+静音....</p>
+								<p class="texte1">&#165;4999.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap210">
+						<ul >
+							<li class="sp218"><img src="img2/kt8.png"alt="" title="空调"</li>
+							<li>
+								<p class="textq1">1.5匹/三级能效/定....</p>
+								<p class="textw1">内外双清洁+静音设计/晒图评价咨询....</p>
+								<p class="texte1">&#165;9999.00</p>
+							</li>
+						</ul>
+					</div>
+					<div class="sap211">
+						<ul >
+							<li class="sp219"><img src="img2/kt9.png"alt="" title="空调"</li>
+							<li>
+								<p class="textq1">静音风道设计/空调挂机....</p>
+								<p class="textw1">自动清洁+大循环风量+静音....</p>
+								<p class="texte1">&#165;2999.00</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				</div>
+				<!--洗衣机-->
+				<div class="dianshi">
+				<ul class="dianshi1">
+					<li><a name="cebian4">洗衣机</a></li>
+				</ul>
+				<ul class="dianshi2">
+					<li><a class="chakangengduo" href="#">查看更多</a></li>
+				</ul>
+			</div>
+			<!--<img src="img2/xy2.png"/>-->
+			<div class="xiyiji">
+				<div class="xiyiji1"><img src="img2/xy1.png" title="海信精品，值得信赖"/></div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img2/xy2.png" title="洗衣机"/></li>
+						<li>
+							<p class="textq1">十公斤BLDC变频滚筒/8....</p>
+							<p class="textw1">晒图评论有惊喜，大奖等你来....</p>
+							<p class="texte1">&#165;2999.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img2/xy3.png" title="洗衣机"/></li>
+						<li>
+							<p class="textq1">滚筒10公斤/变频....</p>
+							<p class="textw1">冰洗钜惠，【限时销售，....</p>
+							<p class="texte1">&#165;1999.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img2/xy4.png" title="洗衣机"/></li>
+						<li>
+							<p class="textq1">十公斤BLDC变频滚筒/8....</p>
+							<p class="textw1">冰洗钜惠，【限时销售，....</p>
+							<p class="texte1">&#165;3999.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img2/xy5.png" title="洗衣机"/></li>
+						<li>
+							<p class="textq1">十公斤BLDC变频滚筒/8....</p>
+							<p class="textw1">冰洗钜惠，【限时销售，....</p>
+							<p class="texte1">&#165;3999.00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--冰柜-->
+			<div class="dianshi">
+				<ul class="dianshi1">
+					<li><a name="cebian5">冰柜</a></li>
+				</ul>
+				<ul class="dianshi2">
+					<li><a class="chakangengduo" href="#">查看更多</a></li>
+				</ul>
+			</div>
+			<!--<img src="img2/xy2.png"/>-->
+			<div class="xiyiji">
+				<div class="xiyiji1"><img src="img3/bg1.png" title="海信精品，值得信赖"/></div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/bg2.png" title="冰柜"/></li>
+						<li>
+							<p class="textq1">单温/冷藏冷冻/100升....</p>
+							<p class="textw1">晒图评论有惊喜，大奖等你来....</p>
+							<p class="texte1">&#165;1999.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/bg3.png" title="冰柜"/></li>
+						<li>
+							<p class="textq1">容声单温/冷藏冷冻/309升....</p>
+							<p class="textw1">晒单评论送公牛插座，还送...</p>
+							<p class="texte1">&#165;299.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/bg4.png" title="冰柜"/></li>
+						<li>
+							<p class="textq1">容声单温/冷藏冷冻/309升....</p>
+							<p class="textw1">晒单评论送公牛插座，还送....</p>
+							<p class="texte1">&#165;199.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/bg5.png" title="冰柜"/></li>
+						<li>
+							<p class="textq1">单温/冷藏冷冻/100升....</p>
+							<p class="textw1">晒单加评论有惊喜，送大礼包....</p>
+							<p class="texte1">&#165;999.00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--手机-->
+			<div class="dianshi">
+				<ul class="dianshi1">
+					<li><a name="cebian6">手机</a></li>
+				</ul>
+				<ul class="dianshi2">
+					<li><a class="chakangengduo" href="#">查看更多</a></li>
+				</ul>
+			</div>
+			<!--<img src="img2/xy2.png"/>-->
+			<div class="xiyiji">
+				<div class="xiyiji1"><img src="img3/sj1.png" title="海信精品，值得信赖"/></div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/sj2.png" title="手机"/></li>
+						<li>
+							<p class="textq1">A2PRO双屏手机/5.5英....</p>
+							<p class="textw1">晒单加评论有惊喜，送大礼包....</p>
+							<p class="texte1">&#165;3999.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/sj3.png" title="手机"/></li>
+						<li>
+							<p class="textq1">Hisense/海信 H20 异型全面屏....</p>
+							<p class="textw1">晒单送大礼包（雅马哈里大....</p>
+							<p class="texte1">&#165;1899.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/sj4.png" title="手机"/></li>
+						<li>
+							<p class="textq1">Hisense/海信 H20 异型全面屏....</p>
+							<p class="textw1">晒单送大礼包（雅马哈里大....</p>
+							<p class="texte1">&#165;2999.00</p>
+						</li>
+					</ul>
+				</div>
+				<div class="xiyiji3">
+					<ul>
+						<li class="xiyiji2"><img src="img3/sj5.png" title="手机"/></li>
+						<li>
+							<p class="textq1">A2PRO双屏手机/5.5英....</p>
+							<p class="textw1">晒图评价咨询客服送钢化膜....</p>
+							<p class="texte1">&#165;9999.00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--视频-->
+			<div class="dianshi">
+				<ul class="dianshi1">
+					<li>视频</li>
+				</ul>
+			</div>
+							<!--<video class="videobox21" src="video/shipin1.mp4" controls="controls"></video>-->
+			
+			<div class="spbox">
+				<div class="spbox12">
+					<div class="">
+						<video class="vi1" src="video/shipin1.mp4" controls="controls">
+					</div>
+					<div >
+						<p class="textv1">海信ULED超画质电视E9</p>
+						<p class="textv2">突破行业瓶颈，见证世界海信</p>
+					</div>
+				</div>
+				<div class="spbox13">
+                        <div class="">
+						<video class="vi1" src="video/shipin2.mp4" controls="controls">
+					</div>
+					<div >
+						<p class="textv1">海信三桶洗衣机</p>
+						<p class="textv2">匠心制造，先于时代的前瞻智慧</p>
+					</div>
+				</div>
+				<div class="spbox14">
+					<div class="">
+						<video class="vi1" src="video/shipin3.mp4" controls="controls">
+					</div>
+					<div >
+						<p class="textv1">WE BELIEVE IN HISENSE</p>
+						<p class="textv2">全球海信人共唱一首歌</p>
+					</div>
+				</div>
+			</div>
+			<!--服务-->
+			<div class="dianshi">
+				<ul class="dianshi1">
+					<li>服务</li>
+				</ul>
+			</div>
+			<div class="fuwubox">
+				<div class="textf1">
+					<img src="img3/fwa1.png" title="海信官方商城，汇聚精品"/>
+					<!--<div class="fwimgbox">
+						<img src="img3/fwb11.png" title="海信官方商城，汇聚精品"/>
+					</div>-->
+					
+				</div>
+				<div class="textf1">
+					<img src="img3/fwa2.png" title="海信官方商城，汇聚精品"/>
+					<!--<div class="fwimgbox">
+						<img src="img3/fwb22.png" title="海信官方商城，汇聚精品"/>
+					</div>-->
+					
+				</div>
+				<div class="textf1">
+					<img src="img3/fwa3.png" title="海信官方商城，汇聚精品"/>
+					<!--<div class="fwimgbox">
+						<img src="img3/fwb33.png" title="海信官方商城，汇聚精品"/>
+					</div>-->
+					
+				</div>
+				<div class="textf1">
+					<img src="img3/fwa4.png" title="海信官方商城，汇聚精品"/>
+					<!--<div class="">
+						<img src="img3/fwb44.png" title="海信官方商城，汇聚精品"/>
+					</div>-->
+
+					
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="botbox">
+				<div class="bot1">
+					<div>
+						<img src="img3/bot1.png" title="海信精品" />
+					</div>
+					<div>
+						<img src="img3/bot2.png" title="海信精品" />
+					</div>
+					<div>
+						<img src="img3/bot3.png" title="海信精品" />
+					</div>
+					<div>
+						<img src="img3/bot4.png" title="海信精品" />
+					</div>
+				</div>
+				<!--第二层-->
+			<div id="textbox">
+				<div id="textbox1">
+					<div id="text1">
+						<p id="text2">企业简介</p>
+						<p><a href="#">企业简介</a></p>
+						<p><a href="#">企业历史</a></p>
+						<p><a href="#">企业荣耀</a></p>
+						<p><a href="#">企业布局</a></p>
+					</div>
+					<div id="text1">
+						<p id="text2">人才招聘</p>
+						<p><a href="#">社会招聘</a></p>
+						<p><a href="#">校园招聘</a></p>
+						<p><a href="#">培训发展</a></p>
+						<p><a href="#">快乐工作</a></p>
+					</div>
+					<div id="text1">
+						<p id="text2">商城服务</p>
+						<p><a href="#">售后政策</a></p>
+						<p><a href="#">价格保护</a></p>
+						<p><a href="#">退款说明</a></p>
+						<p><a href="#">退换货说明</a></p>
+					</div>
+					<div id="text1">
+						<p id="text2">购物指南</p>
+						<p><a href="#">购物流程</a></p>
+						<p><a href="#">常见问题</a></p>
+						<p><a href="#">在线支付</a></p>
+						<p><a href="#">找人代付</a></p>
+					</div>
+					<div id="text1">
+						<p id="text2">物流配送</p>
+						<p><a href="#">送货范围</a></p>
+						<p><a href="#">送装一体</a></p>
+					
+					</div>
+					<div id="text1">
+						<p id="text2">友情链接</p>
+						<p><a href="#">腾讯视频</a></p>
+						<p><a href="#">TV官网</a></p>
+						
+					</div>
+					<div id="textimg">
+						<p id="textimg1">4006-111-111</p>
+						<p><a id="textimg2">周一至周日二十四小时</a></p>
+						<p><a id="textimg3"><img src="../Hairer电器素材/06dee1fa-7c8d-401c-9c78-83cddfc4625c.png"/></a></p>
+						<p><a id="textimg4">扫描关注海信服务</a></p>
+						
+					</div>
+					
+				</div>
+			</div>
+			<!--最底部-->
+			      <div id="bottom">
+			      	<div id="bottom1">
+			      		<div id="bottom4">
+			      			<div id="bottom2">
+			      			     <div><img src="img4/1.png"/></div>
+			      			     <div><img src="img4/2.png"/></div>
+			      			     <div><img src="img4/3.png"/></div>
+			      			     <div><img src="img4/4.png"/></div>
+			      		     </div>
+			      		     <div id="bottom3">
+			      			     <p>隐私政策</p>
+			      		     </div>
+			      		     <div id="bottom5">
+			      			     <p>Copyright 2015 Hisense Group All Rights Reserved. 海信集团有限公司版权所有 鲁ICP备05027830</p>
+			      		     </div>
+			      		</div>
+			      		
+			      	</div>
+			      </div>
+			</div>
+		</footer>
+		<div id="cebian">
+			<div>
+				<p><a href="#cebian1">电视</a></p>
+			</div>
+			<div>
+				<p><a href="#cebian2">冰箱</a></p>
+			</div>
+			<div>
+				<p><a href="#cebian3">空调</a></p>
+			</div>
+			<div>
+				<p><a href="#cebian4">洗衣机</a></p>
+			</div>
+			<div>
+				<p><a href="#cebian5">冷柜</a></p>
+			</div>
+			<div>
+				<p><a href="#cebian6">手机</a></p>
+			</div>
+			<div>
+				<p><a href="#cebian7">TOP</a></p>
+			</div>
+		</div>
+	</body>
+
+</html>
